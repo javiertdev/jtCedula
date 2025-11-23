@@ -1,4 +1,4 @@
-[![@javiert.dev/cedula](https://s6.imgcdn.dev/YKW1B9.png)](https://github.com/javiertdev/jtCedula)
+[![@javiert.dev/cedula](https://s6.imgcdn.dev/YKWaND.png)](https://github.com/javiertdev/jtCedula)
 
 Lee esto en [español](https://github.com/javiertdev/jtCedula/blob/main/README.md).
 
@@ -11,14 +11,14 @@ Here I present a simple and lightweight library that will help you validate RUN/
 > [!NOTE]
 > This project is not affiliated with any government entity nor related to the Chilean government. It is an independent tool created to facilitate document validation in web applications.
 
-[![Documentation](https://s6.imgcdn.dev/YKW4sO.png)](https://github.com/javiertdev/jtCedula/wiki)
+[![Documentation](https://s6.imgcdn.dev/YKWQIv.png)](https://github.com/javiertdev/jtCedula/wiki)
 
 I invite you to review the [**documentation**](https://github.com/javiertdev/jtCedula/wiki) to see how easy it is to use. Here you will find usage examples, available functions and much more.
 
 > [!IMPORTANT]
 > The validations in this library are mathematical calculations and are not related to the veracity of the data in the civil registry. Therefore, it is not guaranteed that the RUN/RUT, document number or passport is real or associated with a specific person. This library only validates that the structure and format of the entered data are correct.
 
-[![Installation](https://s6.imgcdn.dev/YKWkLq.png)](https://github.com/javiertdev/jtCedula/wiki)
+[![Installation](https://s6.imgcdn.dev/YKWs6B.png)](https://github.com/javiertdev/jtCedula/wiki)
 This is really fast and simple! You just need a package manager like npm, yarn or pnpm. If you already have one installed, simply run one of the following commands in the root of your project:
 
 ```bash
@@ -42,7 +42,7 @@ And that's it! You already have **jtCedula** installed and ready to use!
 > [jtSnippets](https://marketplace.visualstudio.com/items?itemName=javiertdev.jt-snippets) supports this project!
 > [![jtSnippets](https://s6.imgcdn.dev/YKWw6h.png)](https://marketplace.visualstudio.com/items?itemName=javiertdev.jt-snippets)
 
-[![Examples](https://s6.imgcdn.dev/YKWIHg.png)](https://github.com/javiertdev/jtCedula/wiki)
+[![Examples](https://s6.imgcdn.dev/YKWiBN.png)](https://github.com/javiertdev/jtCedula/wiki)
 
 > [!TIP]
 > Just in case you didn't know, the RUN (Rol Único Nacional in spanish) is a unique identification number assigned to each Chilean citizen. It is used for various purposes, such as identification in government, banking and commercial procedures. The RUN consists of a number followed by a check digit, which can be a number or the letter "K".
@@ -85,7 +85,7 @@ jtCedula.documentNumber.validate('123.JKL.RRR'); //Example response: false
 jtCedula.documentNumber.validate('A123456789'); //Example response: true
 ```
 
-![Roadmap](https://s6.imgcdn.dev/YKWylu.png)
+![Roadmap](https://s6.imgcdn.dev/YKW5VL.png)
 
 | Function | Status |
 | ------- | :------: |
