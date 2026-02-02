@@ -1,6 +1,6 @@
 {
     "name": "@javiert.dev/cedula",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Una librería con algunas herramientas de validación para la cédula de identidad chilena",
     "author": {
         "name": "javiert.dev",
