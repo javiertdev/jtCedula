@@ -7,7 +7,7 @@ const run = {
     validate(run: string): boolean {
         run = this.unformat(run);
         if (run.length < 2) return false;
-        return this.dv(run.slice(0, run.length - 1)) === run.slice(-1).toLowerCase();
+        return this.dv(run.slice(0, run.length - 1)) === run.slice(-1).toUpperCase();
     },
 
     /**
@@ -29,7 +29,7 @@ const run = {
         }
         let res = sum % 11;
         if (res === 1) {
-            return 'k';
+            return 'K';
         } else if (res === 0) {
             return '0';
         } else {
@@ -54,7 +54,7 @@ const run = {
             formattedrun += runBody[runBody.length - 1 - i];
         }
         formattedrun = formattedrun.split('').reverse().join('');
-        return (formattedrun + '-' + runDv).toLowerCase();
+        return (formattedrun + '-' + runDv).toUpperCase();
     },
 
     /**
@@ -64,7 +64,7 @@ const run = {
      * @returns - El RUN/RUT desformateado
      **/
     unformat(run: string, zero: boolean = false): string {
-        return (zero ? run.replace(/\./g, '').replace(/-/g, '').padStart(11, '0') : run.replace(/\./g, '').replace(/-/g, '')).toLowerCase();
+        return (zero ? run.replace(/\./g, '').replace(/-/g, '').padStart(11, '0') : run.replace(/\./g, '').replace(/-/g, '')).toUpperCase();
     },
 
     /**
