@@ -42,15 +42,17 @@
     "scripts": {
         "clear": "rm -r ./dist",
         "dev": "jtexec ./src/index.ts",
-        "build": "tsc && node ./pkgBuild.cjs",
+        "build:esm": "tsc",
+        "build:cjs": "tsc -p tsconfig.cjs.json",
+        "build": "npm run build:esm && npm run build:cjs",
         "publish:local": "npm run build && cd dist && npm publish --registry http://localhost:4873",
         "publish:npm": "npm run build && cd dist && npm publish --access public",
-        "min": "browserify ./dist/index.js -o ./dist/jt.cedula.bundle.js && uglifyjs ./dist/jt.cedula.bundle.js -o ./dist/jt.cedula.min.js"
+        "min": "node esbuild.config.js"
     },
     "devDependencies": {
-        "browserify": "^17.0.1",
+        "esbuild": "^0.27.2",
+        "ts-node": "^10.9.2",
         "typescript": "^5.8.3",
-        "uglify-js": "^3.19.3",
-        "ts-node": "^10.9.2"
+        "uglify-js": "^3.19.3"
     }
 }
